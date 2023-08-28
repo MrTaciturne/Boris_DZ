@@ -84,6 +84,8 @@ public class BorisHomeWork3 {
             System.out.print(mass3[i] + " ");
             i++;
         }
+
+//        Тест изменений
     }
 }
 
