@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BorisHomework2 {
+public class BorisHomeWork2 {
 
     public static void main(String[] args) {
 
