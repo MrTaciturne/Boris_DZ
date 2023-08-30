@@ -1,7 +1,5 @@
 package HomeWork4;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class District {
@@ -17,7 +15,6 @@ public class District {
         int floor;
         int max = 0;
         int min = 0;
-        String out;
 //        boolean acces;
 
 //        Создание дома
@@ -54,7 +51,7 @@ public class District {
             System.out.print("Waiting for command: "); //На данном этапе есть ошибка:
             command = in.nextLine();                   //строка "Waiting for command" дублируется ((
             if (command.equals("Stop")) {
-                System.out.printf("Ending");
+                System.out.println("Ending");
                 break;
             } else if (command.equals("Redact")) {
                 System.out.println("Commands: Lower or Upper || Plus or Minus, Back");
@@ -189,6 +186,7 @@ public class District {
                 System.out.println("Operation commands: Up, Down, Floor, Image, End");
             } else if (command.equals("End")) {
                 System.out.println("Thank you and goodbye");
+                break;
             }
         }
     }
