@@ -96,16 +96,16 @@ public class District {
                 System.out.print("""
                                                 
                         Lets create Elevator!
-                        U needed to set Up and Low floors, and level of access:
+                        U needed to set Up and Low floors:
                         """);
-
+                System.out.println("Current lower floor of Skyscraper: " + hous.lowerFloor);
+                System.out.println("Current upper floor of Skyscraper: " + hous.upperFloor);
                 while (true) {
                     System.out.print("Lower floor for elevator: ");
                     min = in.nextInt();
                     if (min < hous.lowerFloor || min >= hous.upperFloor || min == 0) {
                         System.out.println("Lift mast be inside the current Skyscraper");
                     } else {
-                        System.out.println("");
                         break;
                     }
                 }
@@ -168,21 +168,21 @@ public class District {
                 floor = in.nextInt();
                 elevator.move(floor);
                 if (floor != elevator.currentFloor) {
-                    System.out.print("Selected floor outside elevator access");
+                    System.out.println("Selected floor outside elevator access");
                 }
                 System.out.println("Current floor: " + elevator.currentFloor);
             } else if (command.equals("Image")) {
-                System.out.println("_____");
+                System.out.println("  _____");
                 for (int b = hous.upperFloor; b >= hous.lowerFloor; b--) {
                     if (b == 0) {
-                        System.out.println("-----");
+                        System.out.println("---------");
                     } else if (b == elevator.currentFloor) {
-                        System.out.println("|{0}| : Floor " + b);
+                        System.out.println("  |{0}| : Floor " + b);
                     } else if (b != elevator.currentFloor) {
-                        System.out.println("|   | : Floor " + b);
+                        System.out.println("  |   | : Floor " + b);
                     }
                 }
-                System.out.println("-----");
+                System.out.println("  -----");
                 System.out.println("Operation commands: Up, Down, Floor, Image, End");
             } else if (command.equals("End")) {
                 System.out.println("Thank you and goodbye");

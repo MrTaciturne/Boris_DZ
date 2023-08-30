@@ -7,9 +7,6 @@ public class Elevator {
     int maxFloor;
 //   boolean access = false;
 
-    Elevator() {
-    }
-
     Elevator(int min, int max) {
         minFloor = min;
         maxFloor = max;
@@ -61,7 +58,7 @@ public class Elevator {
     }
 
     public String move(int floor){
-        if (floor >= minFloor && floor >= maxFloor){
+        if (floor >= minFloor && floor <= maxFloor){
             currentFloor = floor;
             return ("Floor: " + currentFloor);
         }   else {
