@@ -1,5 +1,7 @@
 package HomeWork5;
 
+import HomeWork5.Enemy.Goblin;
+import HomeWork5.Enemy.Orcoid;
 import HomeWork5.Heros.Archer;
 import HomeWork5.Heros.Mage;
 import HomeWork5.Heros.Warrior;
@@ -19,6 +21,8 @@ public class TrainingGround {
     Identify yourself, magician: """);
 
 
+        Goblin goblin = new Goblin();
+        Orcoid orc = new Orcoid();
 
         name = in.nextLine();
         name = name.toUpperCase();
