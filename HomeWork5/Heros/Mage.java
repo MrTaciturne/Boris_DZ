@@ -13,7 +13,7 @@ public class Mage extends Hero {
 
     @Override
     public void attackEnemy() {
-        if (dead == false){
+        if (!dead){
             System.out.println("Mage ready for attack\n");
         System.out.println(getName() + ": Fireball!!!");
         super.attackEnemy();
