@@ -7,11 +7,8 @@ public class Friend {
     private String familia;
     private String phoneNumber;
 
-    private static int friendQuantity = 0;
-
     Friend(String familia){
         this.familia = familia;
-        friendQuantity++;
     }
 
     public void setPhoneNumber(String phoneNumber) {
@@ -26,7 +23,4 @@ public class Friend {
         return familia;
     }
 
-    public static int getFriendQuantity() {
-        return friendQuantity;
-    }
 }
