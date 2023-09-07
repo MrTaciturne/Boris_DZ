@@ -1,21 +1,9 @@
 package HomeWork7.Garages.Cars;
 
-public class Gelic {
+public class Gelic extends Car{
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
 
-    @Override
-    public boolean equals(Object equvivalent) {
-        if (this == equvivalent) return true;
-        if (getClass() != equvivalent.getClass()) return false;
-        return false; //Заглушка, чтоб не жаловался
-    }
-
-    @Override
-    public String toString() {
-        return this.getClass().toString() + " " + " ";
+    public Gelic(String mark, int year, String color) {
+        super(mark, year, color);
     }
 }
