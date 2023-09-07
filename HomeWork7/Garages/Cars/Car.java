@@ -16,19 +16,6 @@ public abstract class Car {
         this.color = color;
     }
 
-    public String getMark() {
-        return mark;
-    }
-    public String getModel() {
-        return model;
-    }
-    public int getYear() {
-        return year;
-    }
-    public String getColor() {
-        return color;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class Garage {
 
     HashMap<Integer, ArrayList<Car>> garage = new HashMap<>();
-    int quantity = 0;
+
 
 
     public void parking(Car car){

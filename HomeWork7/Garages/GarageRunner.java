@@ -1,8 +1,8 @@
 package HomeWork7.Garages;
-import HomeWork7.Garages.Cars.Car;
+
 import HomeWork7.Garages.Cars.Gelic;
 import HomeWork7.Garages.Cars.Lamba;
-import HomeWork7.Garages.Garage;
+
 public class GarageRunner {
 
     public static void main(String[] args) {
