@@ -21,6 +21,6 @@ public class Sleeping implements Runnable{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Time of sleeping = " + this.number);
+        System.out.println("\nTime of sleeping = " + this.number);
     }
 }

@@ -13,21 +13,26 @@ public class SleepingRunner {
     public static void main(String[] args) throws InterruptedException {
 
         System.out.print("\nWaiting for seconds: ");
-        while (insertNum >= 0) {
+        while (true) {
+            insertNum = in.nextInt();
             insert();
+            if(!in.hasNextInt()) {
+                return;
+            }
         }
     }
     private static void insert() throws InterruptedException {
         try{
-            if ((insertNum = in.nextInt()) >= 0){
-                executor.execute(new Sleeping(insertNum));
-            } else {
-                System.out.print("\nEnding process");
-                executor.close();
-            }
-        } catch (InputMismatchException e){
-            System.out.print("\nOnly numbers");
-            Thread.sleep(1000);
+                if (!(insertNum < 0)) {
+                    executor.execute(new Sleeping(insertNum));
+                } else {
+                    System.out.print("\nEnding process");
+                    executor.close();
+                }
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+
     }
 }
